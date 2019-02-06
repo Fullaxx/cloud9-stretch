@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------------
 # Pull base image.
-FROM debian:9-slim
+FROM debian:stretch-slim
 MAINTAINER Brett Kuskie <fullaxx@gmail.com>
 
 # ------------------------------------------------------------------------------
