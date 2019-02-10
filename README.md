@@ -1,22 +1,20 @@
 # A Cloud9 docker image based on Debian 9 (Stretch)
 
 ## Base Docker Image
-Debian 9
+Debian 9 (x64)
 
-## Get the image
-
-Download an automated build from the public Docker Hub Registry:
+## Get the image from Docker Hub
 
     docker pull fullaxx/cloud9-stretch
 
-## Usage
+## Run the image on port 80
 
     docker run -d -p 80:80 fullaxx/cloud9-stretch
 
-You can add a workspace as a volume directory with the argument *-v /your-path/c9ws/:/c9ws/* like this :
+## Save your Cloud9 workspace on the host
 
-    docker run -d -p 80:80 -v /your-path/c9ws/:/c9ws/ fullaxx/cloud9-stretch
+    docker run -d -p 80:80 -v /your/path/c9ws/:/c9ws/ fullaxx/cloud9-stretch
 
-## Build it locally using the Dockerfile on github
+## Build it locally using the github repository
 
     docker build -t="fullaxx/cloud9-stretch" github.com/Fullaxx/cloud9-stretch
